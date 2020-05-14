@@ -43,6 +43,10 @@
 .slick-dots li {
     display: inline-block;
     padding-left: 10px;
+
+    @include for-phone-only{    
+        padding-left: 0px;
+     }
     
 }
 

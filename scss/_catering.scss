@@ -119,6 +119,10 @@ h3{
             .pickup{
                 width: 80%;
 
+                @include for-phone-only{    
+                         width: 85%; 
+                      }
+
                 @include for-desktop-up {
                     width: 70%;
                 }

@@ -22,6 +22,10 @@ header{
                 transform: rotateY(360deg);
             }
 
+            // @include for-phone-only{    
+            //     width: 12%; 
+            //  }
+
             @include for-tablet-portrait-up {    
                 width: 15%; 
              }
@@ -42,6 +46,10 @@ header{
             margin-left: .1em;
             padding: .1em .5em .1em .5em;
             border-radius: 5px;
+
+            @include for-phone-only{    
+                font-size: 12rem;
+             }
             &:hover{
                 background-color: $primary;
                 transition-timing-function: ease-in;
