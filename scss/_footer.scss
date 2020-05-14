@@ -20,6 +20,10 @@ footer{
            padding-bottom: 1em;
            font-size: 12rem;
 
+           @include for-phone-only{    
+                 font-size: 10rem;
+            }
+
            @include for-tablet-landscape-up {    
             font-size: 15rem;
         }
