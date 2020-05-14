@@ -36,20 +36,21 @@
         </div>
 
         <div class="inputorder anim">
-            <form class= "formcatering" action="">
+            <form class= "formcatering" action="POST" data-netfly = "true">
                 <label for="fname">Name:</label><br>
-                <input type="text" class="input-field" id="fname" name="fname"><br>
+                <input type="text" class="input-field" id="fname" name="name"><br>
                 <label for="mmobile">Mobile:</label><br>
-                <input type="tel"  class="input-field mobile" id="mobile" name="mmobile" ><br>
+                <input type="tel"  class="input-field mobile" id="mobile" name="mobile" ><br>
                 <label for="email">Email:</label><br>
                 <input type="email" class="input-field" id="email" name="email"><br>
                 <label for="picktime">Pick-up Time:</label><br>
                 <input type="datetime-local" class="input-field pickup" id="picktime" name="picktime"><br>
                 <label for="orderdetail">Order Details:</label><br>
                 <!-- <input type="text" class="input-field" id="orderdetail" name="orderdetail"><br> -->
-                <textarea name="text" class="text-field" id="text"></textarea><br>
-                <button type="button" class="btn">Send</button>
-
+                <textarea name="message" class="text-field" id="text" placeholder="What would you like to order ?"></textarea><br>
+                <input type="submit" value="Send" class="btn">
+                <!-- in case of span use this code bellow -->
+                <!-- <span data-netfly-recaptcha="true"></span> -->
             </form>
 
         </div>
