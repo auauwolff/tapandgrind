@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <title>Catering - Tap & Grind</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="Images/Icons/logo.svg" alt="logo" class="logo" onclick="window.location.href='index.html'">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="#">menu</a></li>
+                <li><a href="catering.html">catering</a></li>
+                <li><a href="about.html">about us</a></li>
+            </ul>
+        </nav>
+        <img src="Images/Catering/catering.jpg" alt="Catering" class="hero">
+    </header>
+
+    <section class="catering">
+
+        <h1>We provide...</h1>
+        <h3>A range of fresh sandwich's, bagels, rolls, deserts.. 
+            Ready for your party to be a success!!
+        </h3>
+
+        <div class="foodcarousel">  
+            <img src="images/Catering/food1.jpg" alt="food1">
+            <img src="images/Catering/food2.jpg" alt="food2">
+            <img src="images/Catering/food3.jpg" alt="food3">
+            <img src="images/Catering/food4.jpg" alt="food4">
+        </div>
+
+        <div class="inputorder anim">
+            <form class= "formcatering" action="">
+                <label for="fname">Name:</label><br>
+                <input type="text" class="input-field" id="fname" name="fname"><br>
+                <label for="mmobile">Mobile:</label><br>
+                <input type="tel"  class="input-field mobile" id="mobile" name="mmobile" ><br>
+                <label for="email">Email:</label><br>
+                <input type="email" class="input-field" id="email" name="email"><br>
+                <label for="picktime">Pick-up Time:</label><br>
+                <input type="datetime-local" class="input-field pickup" id="picktime" name="picktime"><br>
+                <label for="orderdetail">Order Details:</label><br>
+                <!-- <input type="text" class="input-field" id="orderdetail" name="orderdetail"><br> -->
+                <textarea name="text" class="text-field" id="text"></textarea><br>
+                <button type="button" class="btn">Send</button>
+
+            </form>
+
+        </div>
+    </section>
+
+    <footer>
+       
+        <img src="Images/Icons/facebook.svg" alt="facebook">
+        <img src="Images/Icons/instagram.svg" alt="instagram">
+        <img src="Images/Icons/advisor.svg" alt="tripadvisor" class="trip">
+
+        <span>Contact - 0420 713 810 <br>
+            Located at Australian Fair Shopping - Ground Floor - Southport</span>
+            <p>Copyright Tap & Grind - Cafe</p>
+    </footer>
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="javascript/carousel.js"></script> 
+    <script type="text/javascript" src="javascript/animation.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+header{
+    margin-top: -20px;
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        z-index: 10;
+        margin-top: 50px;
+        margin-left: 5%;
+        width: 90%;
+        
+        
+        img{
+            width: 20%;
+            transition-property: transform;
+            transition-duration: 2s;
+
+            &:hover{
+                cursor: pointer;
+                transform: rotateY(360deg);
+            }
+
+            @include for-tablet-portrait-up {    
+                width: 15%; 
+             }
+            
+             @include for-desktop-up {
+                 width: 10%;
+             }
+        }
+
+        ul{
+            display: flex;
+            
+            
+            
+        }
+
+        li{
+            margin-left: .1em;
+            padding: .1em .5em .1em .5em;
+            border-radius: 5px;
+            &:hover{
+                background-color: $primary;
+                transition-timing-function: ease-in;
+                transition: 0.50s;
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+.crew{
+
+    background-color: $secundary;
+    position: relative;
+    top: -22px; 
+    padding: 4em 0 2em;
+    color: black;
+    border-bottom-left-radius: 100px;
+    
+
+    h2{
+        margin-bottom: 100px;
+        margin-top: 50px;
+        font-size: 30rem;
+        font-weight: 500;
+
+    }
+
+        @include for-tablet-landscape-up {    
+            ul{
+                display: flex;
+                justify-content: space-evenly;
+                
+            }
+
+            img{
+                width: 60%;
+            }
+
+            p{
+                font-size: 15rem;
+            }
+     }
+
+            @include for-desktop-up {    
+                
+                img{
+                    width: 80%;
+                }
+
+                p{
+                    font-size: 15rem;
+                }
+            }
+
+    li{
+        margin-bottom: 3em;
+        font-weight: medium;
+        font-size: Large;
+        position: relative;
+        
+         
+         &:nth-child(5){
+             margin-bottom: 0;
+         }
+
+    }
+
+    
+
+}
+
+.anim {
+    opacity: 0;
+}
+
+@keyframes anim1 {
+    from {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    to  {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
