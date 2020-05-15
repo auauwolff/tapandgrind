@@ -16,12 +16,12 @@ footer{
             display: flex;
             justify-content: center;
             color:black;
-           margin: 5em 0 0 1em;
+           //margin: 5em 0 0 1em;
            padding-bottom: 1em;
            font-size: 12rem;
 
            @include for-phone-only{    
-                 font-size: 10rem;
+                // font-size: 10rem;
             }
 
            @include for-tablet-landscape-up {    
@@ -42,6 +42,7 @@ footer{
        }
        img {
            padding: 1em;
+           margin-bottom: 3.5em;
            width: 12%;
 
            @include for-tablet-portrait-up {    
