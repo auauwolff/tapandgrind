@@ -1,0 +1,76 @@
+.container-menu{
+    width: 90%;
+   background-color: $primary;
+    margin: 30px auto;
+    padding: 30px 20px;
+    border-radius: 10px;
+    
+}
+
+// .style-menu{
+//     background-color: $primary;
+//     width: 100%;
+//     height: 100vh;
+//     margin: 0px auto;
+//     padding-top: 30px;
+// }
+
+
+
+
+.menu{
+    width: 100%;
+    background-color:white;
+    border-radius: 5px;
+    //border-width: 1px;
+    border-color: orange;
+    outline: none;
+    text-align: left;
+    padding: 15px 20px 10px;
+    color: rgb(255, 217, 0);
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+    margin-bottom: 2px;
+    font-weight: bold;
+    
+
+        // &:hover, &.is-open {
+        //     background-color: $primary;
+        //     color: white;
+        // }
+
+        &::after{
+            content: "\f055";
+            font-family: "fontawesome";
+            font-size: 20px;
+            float: right;
+        }
+        
+        &.is-open::after { 
+            content: "\f056"; 
+        }
+
+} 
+
+.menu-content{
+    padding: 0 20px;
+    border-left: 1px solid  rgb(255, 217, 0);
+    border-right: 1px solid  rgb(255, 217, 0);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+    background-color: rgb(255, 217, 60);
+    border-radius: 2px;
+    text-align: left;
+
+    ul{
+        padding: 5px 0px;
+    }
+    
+}
+
+// .price{
+//     position: relative;
+//     text-align: end;
+//     left: 0;
+// }

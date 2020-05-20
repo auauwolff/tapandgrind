@@ -1,3 +1,5 @@
+//------Scrolling section animation transition
+
 const images = document.querySelectorAll('.anim');
 
         observer = new IntersectionObserver((entries) => {
@@ -18,3 +20,23 @@ const images = document.querySelectorAll('.anim');
         images.forEach(image => {
             observer.observe(image)
         })
+
+        
+    //------Menu accordion animation set
+
+        var menus = document.getElementsByClassName("menu");
+
+        for (var i = 0; i < menus.length; i++){
+            menus[i].onclick = function () {
+                this.classList.toggle('is-open');
+                var content = this.nextElementSibling;
+
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+
+                } else{
+                    content.style.maxHeight = content.scrollHeight + "px";
+
+                }
+            }
+        }
