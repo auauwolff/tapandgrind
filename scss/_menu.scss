@@ -87,10 +87,13 @@
                 font-size: small;
                 border-radius: 50px;
                 padding: 2px 8px;
+                opacity: 0;
+                transition: opacity 2s;
             }
 
             &:hover .tooltiptext{
                 visibility: visible;
+                opacity: 1;
             }
         }
 
