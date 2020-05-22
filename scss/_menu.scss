@@ -7,22 +7,10 @@
     
 }
 
-// .style-menu{
-//     background-color: $primary;
-//     width: 100%;
-//     height: 100vh;
-//     margin: 0px auto;
-//     padding-top: 30px;
-// }
-
-
-
-
 .menu{
     width: 100%;
     background-color:white;
     border-radius: 5px;
-    //border-width: 1px;
     border-color: orange;
     outline: none;
     text-align: left;
@@ -63,14 +51,62 @@
     border-radius: 2px;
     text-align: left;
 
+    #extra-info {
+        border: 1px solid #ccc;
+        display: none;
+        font-size: 10px;
+        margin-top: 10px;
+        padding: 5px;
+        text-transform: uppercase;
+      }
+
+  
+
     ul{
-        padding: 5px 0px;
-    }
+        padding-top: 18px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .tooltip{
+            position: relative;
+
+            .tooltiptext{
+                position: absolute;
+                z-index: 1;
+                visibility: hidden;
+                width: max-content;
+                background-color: white;
+                color: orange;
+                text-align: center;
+                top: 100%;
+                left: 50%;
+                margin-left: -100px;
+                font-size: small;
+                border-radius: 50px;
+                padding: 2px 8px;
+            }
+
+            &:hover .tooltiptext{
+                visibility: visible;
+            }
+        }
+
+        }
+
+        
+    
+
+    .price{
+        position: relative;
+        top: -20px;
+        left: 70%;
+     }
+
+     
     
 }
 
-// .price{
-//     position: relative;
-//     text-align: end;
-//     left: 0;
-// }
+
