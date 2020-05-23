@@ -78,6 +78,7 @@
                 z-index: 1;
                 visibility: hidden;
                 width: max-content;
+                max-width: 80%;
                 background-color: white;
                 color: orange;
                 text-align: center;
@@ -89,6 +90,8 @@
                 padding: 2px 8px;
                 opacity: 0;
                 transition: opacity 2s;
+
+               
             }
 
             &:hover .tooltiptext{
@@ -97,7 +100,7 @@
             }
         }
 
-        }
+    }
 
         
     
