@@ -130,6 +130,10 @@
                     left: -10px;
                     top: 0;
                 }
+
+                @include for-phone-only {    
+                   left: 90%;
+                }
               
       }
 }
