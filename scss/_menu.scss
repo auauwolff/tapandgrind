@@ -57,6 +57,10 @@
     border-radius: 2px;
     text-align: left;
 
+            @include for-phone-only {    
+                padding: 0 0;
+            }
+
     ul{
         padding-top: 18px;
         margin-left: 20px;
@@ -132,7 +136,7 @@
                 }
 
                 @include for-phone-only {    
-                   left: 90%;
+                   left: 85%;
                 }
               
       }
